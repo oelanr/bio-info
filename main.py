@@ -1,13 +1,13 @@
 from bio_info.distances import levenshtein_distance
-
-
+from bio_info.classification_hierarchique import HierarchicalClustering
+ 
 def main():
-    seq1 = "CGAT"
-    seq2 = "CATG"
-    d_h = levenshtein_distance(seq1, seq2)
 
-    print(d_h)
-
+    sequences = ["CGAT", "CATG", "CGTT", "GGAT"]
+    hc = HierarchicalClustering(sequences)
+    
+    print(hc.matrice_distance())
+    print(hc.matrice)
 
 if __name__ == "__main__":
     main()

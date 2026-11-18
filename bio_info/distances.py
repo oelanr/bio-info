@@ -1,4 +1,4 @@
-def hamming_distance(x, y):
+def hamming_distance(x, y, details = False):
     """Distance de Hamming : nombre de positions où x et y diffèrent.
 
     Args:
@@ -20,8 +20,8 @@ def hamming_distance(x, y):
     for i in range(len(x)):
         if x[i] != y[i]:
             indices.append(i)
-
-    print("Les différences sont sur les indices :", indices)
+    if details:
+        print("Les différences sont sur les indices :", indices)
     return len(indices)
 
 
