@@ -1,3 +1,6 @@
+__author__ = "OR"
+__year__ = 2026
+
 from .distances import levenshtein_distance, hamming_distance
 
 from .cluster import Cluster

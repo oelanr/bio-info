@@ -1,3 +1,6 @@
+__author__ = "OR"
+__year__ = 2026
+
 from .classification_hierarchique import HierarchicalClustering
 
 class Cluster:

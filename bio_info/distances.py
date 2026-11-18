@@ -1,3 +1,6 @@
+__author__ = "OR"
+__year__ = 2026
+
 def hamming_distance(x, y, details = False):
     """Distance de Hamming : nombre de positions où x et y diffèrent.
 
